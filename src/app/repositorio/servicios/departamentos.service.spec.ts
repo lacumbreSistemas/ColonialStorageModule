@@ -39,8 +39,6 @@ describe('TestDepartamentoServicio', () => {
           expect(categoria?.categoriaNombre).toEqual('Cervezas')
           expect(categoria?.departamentoNombre).toEqual('Bebidas Alcoholicas')
         })
-
-        
       });
     
 

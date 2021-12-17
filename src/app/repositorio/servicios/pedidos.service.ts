@@ -8,37 +8,38 @@ import { Pedidos } from '../models/pedidos.model';
   providedIn: 'root'
 })
 export class PedidosService {
-    Pedidos: any[] = []; 
+  Pedidos: any[] = [];
 
   constructor(private firestore: AngularFirestore) {
-this.obtenerPedidosPendientes('juan@gmai', 10, [1,1] );
+    this.obtenerPedidosPendientes('juan@gmai', 10, [1, 1]);
   }
 
-  obtenerPedidosPendientes(email:string, limite:number, estado:number[]) {
-  return this.firestore.collection('Pedidos', ref => ref.
-    where('PagoConfirmado', '==', true).where('Estado', 'in', estado).
-    where('Usuario.email','==',email)
-    .limit(limite)
-    .orderBy('Numero', 'asc')
-      ).valueChanges()
-        .pipe(
-           map((pedidos:any) => {
-             this.Pedidos = [];
-              for (let pedido of pedidos) {
-                this.Pedidos.push(new Pedidos(pedido));
-               }   
+  obtenerPedidosPendientes(email: string, limite: number, estado: number[]) {
+    return this.firestore.collection('Pedidos',
+      ref => ref.
+        where('PagoConfirmado', '==', true).where('Estado', 'in', estado).
+        where('Usuario.email', '==', email)
+        .limit(limite)
+        .orderBy('Numero', 'asc')
+    ).valueChanges()
+      .pipe(
+        map((pedidos: any) => {
+          this.Pedidos = [];
+          for (let pedido of pedidos) {
+            this.Pedidos.push(new Pedidos(pedido));
+          }
           return this.Pedidos
-      } 
+        }
+        )
       )
-    )  
-}
- 
-// NumeroDocumentos(email:string){
-//  this.firestore.collection('Pedidos', ref => ref.where('PagoConfirmado', '==', true)
-// .where('Estado', 'in', [3]).where('Usuario.email','==',email)).get().toPromise().then(function(Cantidad){      
-//   console.log('Cantidad',Cantidad.size); 
-// })
-// }
+  }
+
+  // NumeroDocumentos(email:string){
+  //  this.firestore.collection('Pedidos', ref => ref.where('PagoConfirmado', '==', true)
+  // .where('Estado', 'in', [3]).where('Usuario.email','==',email)).get().toPromise().then(function(Cantidad){      
+  //   console.log('Cantidad',Cantidad.size); 
+  // })
+  // }
 
 
 
