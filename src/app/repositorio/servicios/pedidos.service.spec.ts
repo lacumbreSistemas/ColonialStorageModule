@@ -49,10 +49,17 @@ describe('TestServicePedidos', () => {
 
   });
 
+
   it('La funcion obtenerPedidosPendientes debe tener los parametros email, limite, estado', (done) => {
- 
+    let estado = [0];
+    let email = "sfdfsdf";
+    let limite = 10;
+  
+    servicioPedido.obtenerPedidosPendientes(email,limite, estado)
 
   });
+
+
 
 
 })
