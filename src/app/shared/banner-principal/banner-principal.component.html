@@ -1,0 +1,33 @@
+<!-- <swiper [pagination]="{
+    dynamicBullets: true
+  }"
+  class="mySwiper">
+    <ng-template swiperSlide *ngFor="let slide of SlideImages">
+        <div class="picsum-img-wrapper" >
+            <img [src]="slide.src" class="img-fluid animated fadeIn" alt="Random first slide">
+          </div>
+
+    </ng-template>
+  </swiper> -->
+
+  <swiper
+  [autoplay]="{
+    delay: 2500,
+    disableOnInteraction: false
+  }"
+  [slidesPerView]="1"
+  [spaceBetween]="30"
+  [loop]="true"
+  [config]="swiperConfig"
+    [pagination]="{
+      dynamicBullets: true
+    }"
+    class="mySwiper"
+  >
+  <ng-template swiperSlide *ngFor="let slide of SlideImages">
+    <div class="picsum-img-wrapper" >
+        <img [src]="slide.src" class="img-fluid animated fadeIn" alt="Random first slide">
+      </div>
+
+</ng-template>
+  </swiper>

@@ -27,7 +27,7 @@ export class RepositorioModule {
                private departamentoService: DepartamentosServices,
                pedidosServicio:PedidosService) {
     productoService.ObtenerProductos();
-    departamentoService.ObtenerCategorias()
+    // departamentoService.ObtenerCategorias()
             
   //  departamentoService.CategoriaSeleccionada("5","1")
 
