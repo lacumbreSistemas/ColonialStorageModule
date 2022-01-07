@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewEncapsulation } from '@angular/core';
 import SwiperCore, { Pagination, Navigation } from "swiper";
-
-// install Swiper modules
 SwiperCore.use([Pagination, Navigation]);
+
 @Component({
   selector: 'app-item-list',
   templateUrl: './item-list.component.html',
@@ -11,33 +10,32 @@ SwiperCore.use([Pagination, Navigation]);
 export class ItemListComponent implements OnInit {
 
   constructor() { }
-  swiperConfig: any = {
-    slidesPerView: '1',
-    allowTouchMove:true,
-    slideToClickedSlide: true,
-    spaceBetween:5,
-    lazy: false,
-    loop:true,
-    initialSlide : 1,
-    direction:'horizontal',
-    slideShadows: true,
+  config = {
+    navigation: {
+      nextEl: '.button-next-',
+      prevEl: '.button-prev-' 
+    },
     breakpoints: {
-            400: {
-                    slidesPerView: '2'
-            },
-            1200: {
-                slidesPerView: '3'
-        },
-            1280: {
-                slidesPerView: '5'
-        }
+      100: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+      },
+      375: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+      },
+      676: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      1118: {
+        slidesPerView: 4,
+        spaceBetween: 15,
 
-
-
-
+      }
     }
-  
-  }
+  };
+
   ngOnInit(): void {
   }
 

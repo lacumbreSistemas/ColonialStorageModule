@@ -29,4 +29,15 @@
     height: 100%;
     object-fit: cover;
   }
-  
+
+  .next {
+    float: right;
+}
+
+.prev {
+    float: left;
+}
+
+.mat-flat-button {
+    background-color: rgb(206, 199, 199);
+}
