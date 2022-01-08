@@ -1,8 +1,15 @@
-<div class="button-prev- next">
-    <button mat-icon-button>
-        <mat-icon style="font-size: 15px;" fontSet="fas" fontIcon="fa-chevron-left"></mat-icon>
-    </button>
+
+
+<div class="row d-flex justify-content-center align-items-center">
+  <div class="col-12">
+      <div class="d-flex align-items-center">
+
+ <div class="button-next- prev">
+  <button mat-icon-button>
+      <mat-icon style="font-size: 15px;" fontSet="fas" fontIcon="fa-chevron-left"></mat-icon>
+  </button>
 </div>
+
 <swiper
     [slidesPerView]="4"
     [spaceBetween]="1"
@@ -13,10 +20,12 @@
     [pagination]="{
       clickable: true
     }"
-    
-    class="mySwiper mt-5"
+     class="mySwiper mt-5"
   >
+
+
     <ng-template swiperSlide>
+ 
         <mat-card class="example-card m-5">
             <mat-card-header>
               <div mat-card-avatar class="example-header-image"></div>
@@ -77,8 +86,14 @@
 
 
   </swiper>
-  <div class="button-next- prev">
+
+
+  <div class="button-prev- next">
     <button mat-icon-button>
-        <mat-icon style="font-size: 15px;" fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>
-    </button>
-</div>
+     <mat-icon style="font-size: 15px;" fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>
+   </button>
+   </div>   
+
+  </div>
+  </div>
+  </div>
