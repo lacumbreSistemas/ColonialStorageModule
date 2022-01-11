@@ -1,4 +1,5 @@
 import {  NgModule } from '@angular/core';
+import {RouterModule} from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { SwiperModule } from 'swiper/angular';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import {MatCardModule} from '@angular/material/card';
 import { BannerPrincipalComponent } from './shared/banner-principal/banner-principal.component';
 import { ItemListComponent } from './shared/item-list/item-list.component';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,13 @@ import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
     BannerPrincipalComponent,
     ItemListComponent,
     NavBarComponent,
+    FooterComponent,
 
     
   ],
   imports: [
     BrowserModule,
+    RouterModule,
     RepositorioModule,
     SwiperModule,
     BrowserAnimationsModule,

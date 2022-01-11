@@ -1,0 +1,157 @@
+<!-- <div class="container-fluid mt-4">
+
+
+    <div class="row SuscripcionRedes p-2">
+        <div class="col-12 col-md-6">
+            <div style="height: 100%;" class="d-flex align-items-center">
+                <div class="input-group p-md-4">
+                    <input class="form-control" style="height: 50px;" type="email" placeholder="correo@ejemplo.com">
+                    <div class="input-group-append">
+                        <button class="btn SucripcionBtn" disabled>Suscribir</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-12 col-md-6">
+            <div style="height: 100%;" class="d-flex justify-content-md-end justify-content-center align-items-center">
+                <a class="socialIcon" href="#"><i class="fab fa-facebook"></i></a>
+                <a class="socialIcon" href="https://api.whatsapp.com/send?phone=+504-3150-8762&source=&data" target="_blank"><i class="fab fa-whatsapp "></i></a>
+                <a class="socialIcon" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="socialIcon" href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid footer">
+
+    <div class="container-fluid">
+        <div class="row infoSection col-12">
+            <div class="col-12 col-md-3">
+                <h4> <strong> Servicios</strong> </h4>
+                <p><a href="#">Campañas</a></p>
+                <p><a (click)="topFunction()" [routerLink]="'/PuntosColonial'">Puntos Colonial</a></p>
+                <p><a (click)="topFunction()" [routerLink]="'/Recetas'">Recetas</a></p>
+                <p><a href="#">Ofertas Semanales</a></p>
+            </div>
+            <div class="col-12 col-md-3">
+                <h4> <strong>Sobre nosotros</strong> </h4>
+                <p><a (click)="topFunction()" [routerLink]="'/Historia'">Historia</a></p>
+                <p><a (click)="topFunction()" [routerLink]="'/TrabajaConNosotros'">Trabaja con nosotros</a></p>
+                <p><a (click)="topFunction()" [routerLink]="'/MisionVision'">Misión y visión</a></p>
+            </div>
+            <div class="col-12 col-md-3">
+                <h4> <strong> Servicio al cliente</strong> </h4>
+                <p><a (click)="topFunction()" [routerLink]="'/preguntas'">Preguntas Frecuentes</a></p>
+                <p><a (click)="topFunction()" [routerLink]="'/términos'">Terminos y Condiciones</a></p>
+                <p><a (click)="topFunction()" [routerLink]="'/privacidad'">Privacidad y Seguridad</a></p>
+                <p><a (click)="topFunction()" [routerLink]="'/Ubicaciones'">Ubicaciones</a></p>
+            </div>
+            <div class="col-12 col-md-3">
+                <h4> <strong> Comunidad</strong> </h4>
+                <p><a (click)="topFunction()" [routerLink]="'/bioseguridad'">#JuntosContraElCOVID19</a></p>
+                <p><a (click)="topFunction()" [routerLink]="'/Emprendedores'">Emprendedores</a></p>
+                <p><a href="#">RSE</a></p>
+                <p><a href="#">Pásala</a></p>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-3 footer-contact">
+                    <img src="assets/img/logo/LOGOBLANCO.png">
+                    <h6 class="mt-2">San Pedro Sula, Honduras<br></h6>
+                    <p class="mt-2">
+
+                        <strong> <i class="fas fa-phone"></i>   Teléfono:</strong> +504 2545-6440<br>
+                        <strong> <i class="fab fa-whatsapp"></i>   Whastapp:</strong> +504 3150-8762<br>
+                        <strong> <i class="far fa-envelope"></i>    Correo:</strong> servicioalcliente@supercolonial.com<br>
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Campañas</a></li> -->
+                        <li><i class="bx bx-chevron-right"></i> <a (click)="topFunction()" [routerLink]="'/PuntosColonial'">Puntos Colonial</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a (click)="topFunction()" [routerLink]="'/ComeBienComeSaludable'">Recetas</a></li>
+                        <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Ofertas Semanales</a></li> -->
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Sobre nosotros</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a (click)="topFunction()" [routerLink]="'/Historia'">Historia</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a (click)="topFunction()" [routerLink]="'/TrabajaConNosotros'">Trabaja con nosotros</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a (click)="topFunction()" [routerLink]="'/MisionVision'">Misión y visión</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Servicio al cliente</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a (click)="topFunction()" [routerLink]="'/preguntas'">Preguntas Frecuentes</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a (click)="topFunction()" [routerLink]="'/términos'">Terminos y Condiciones</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a (click)="topFunction()" [routerLink]="'/privacidad'">Privacidad y Seguridad</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a (click)="topFunction()" [routerLink]="'/Ubicaciones'">Ubicaciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Comunidad</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a (click)="topFunction()" [routerLink]="'/bioseguridad'">#JuntosContraElCOVID19</a></li>
+                        <!-- <li><i class="bx bx-chevron-right"></i> <a (click)="topFunction()" [routerLink]="'/Emprendedores'">Emprendedores</a></li> -->
+                        <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">RSE</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">RSE</a></li> -->
+                    </ul>
+                </div>
+
+                <!-- <div class="col-lg-6 col-md-6 footer-newsletter">
+                    <h4>Únase a nuestros boletines</h4>
+                    <p>Reciba notificaciones en su bandeja de correo sobre nuestras promociones y sorteos</p>
+                    <form action="" method="post">
+                        <input type="email" name="email"><input type="submit" value="Subscribe">
+                    </form>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+        <div class="mr-md-auto text-center text-md-left">
+            <div class="copyright">
+                &copy; Copyright {{this.anioActual}} <strong><span>Supermercados Colonial</span></strong>. Todos los derechos reservados
+            </div>
+
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+
+            <a target="blank" href="https://www.facebook.com/supercolonial" class="facebook"><i class="fab fa-facebook"></i></a>
+            <a target="blank" href="https://www.instagram.com/supercolonial" class="instagram"><i class="fab fa-instagram"></i></a>
+
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
