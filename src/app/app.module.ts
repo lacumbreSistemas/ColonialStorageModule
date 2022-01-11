@@ -9,12 +9,14 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { BannerPrincipalComponent } from './shared/banner-principal/banner-principal.component';
 import { ItemListComponent } from './shared/item-list/item-list.component';
+import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BannerPrincipalComponent,
     ItemListComponent,
+    NavBarComponent,
 
     
   ],
