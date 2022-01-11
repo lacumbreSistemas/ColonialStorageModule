@@ -12,6 +12,7 @@ import { BannerPrincipalComponent } from './shared/banner-principal/banner-princ
 import { ItemListComponent } from './shared/item-list/item-list.component';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { TopBarComponent } from './shared/top-bar/top-bar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     ItemListComponent,
     NavBarComponent,
     FooterComponent,
+    TopBarComponent,
 
     
   ],

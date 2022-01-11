@@ -1,0 +1,66 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #12238C;
+    overflow: hidden;
+  }
+
+
+@media (min-width: 360px) and (max-width: 767.98px) {
+    .topNavText {
+        margin-left: 10px;
+        color: rgb(255, 255, 255);
+        font-size: 2.5vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .ListNavText {
+        margin-top: 8px;
+        float: right;
+        margin-right: 10px;
+         color: rgb(255, 255, 255);
+         font-size:  2.5vw;
+         font-family: Arial, Helvetica, sans-serif;
+     }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .topNavText {
+        margin-left: 10px;
+        color: rgb(255, 255, 255);
+        font-size: 1.5vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .ListNavText {
+        float: right;
+        margin-right: 10px;
+         color: rgb(255, 255, 255);
+         font-size: 1.5vw;
+         font-family: Arial, Helvetica, sans-serif;
+     }
+}
+@media (min-width: 1199.98px) and (max-width: 1920px) {
+    .topNavText {
+        margin-left: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.5vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .ListNavText {
+       float: right;
+       margin-right: 50px;
+        color: rgb(255, 255, 255);
+        font-size: 1.5vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+
+.VerTodos {
+    cursor: pointer; 
+    transition: transform .2s;
+ 
+}
+
+.VerTodos:hover {
+    color: #fbdf4a;
+    transform: scale(1.1);
+}
