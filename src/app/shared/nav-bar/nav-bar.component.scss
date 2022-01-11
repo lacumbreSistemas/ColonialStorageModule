@@ -5,6 +5,13 @@
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    .mat-button{
+        margin-left: -10px;
+        color: rgb(17, 17, 17);
+        color: white;
+        font-size:medium;
+    }
+    
     .logo {
         width: 170px;
         height: auto;
@@ -29,6 +36,14 @@
         margin-left: 3px;
     }
     .fas, p{
+        color: white;
+        font-size:medium;
+    }
+
+    
+    .mat-button{
+        margin-left: -55px;
+        color: rgb(17, 17, 17);
         color: white;
         font-size:medium;
     }
@@ -134,48 +149,18 @@
     border-radius: 0.37rem
 }
 
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 10rem;
-    padding: .5rem 0;
-    margin: .5rem 7px 0px;
-    font-size: 1rem;
-    color: #212529;
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: .25rem
-}
 
-.dropdown-item {
-    display: block;
-    width: 100%;
-    padding: .45rem 1.5rem;
-    clear: both;
-    font-weight: 400;
-    color: #212529;
-    text-align: inherit;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0
-}
-
-.navbar-toggler-icon {
-    background-image: url(https://img.icons8.com/ios/50/000000/menu.png)
-}
 
 .nav-link {
     text-transform: uppercase;
     font-weight: 400
 }
 
+.menu, p{
+    margin-top: 5px;
+ color: white;
+
+}
 .vl {
     border-left: 1px solid #fff;
     height: 100%
