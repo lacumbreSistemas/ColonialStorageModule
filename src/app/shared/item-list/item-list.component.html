@@ -11,77 +11,87 @@
 </div>
 
 <swiper
-    [slidesPerView]="4"
+ 
     [spaceBetween]="1"
-    [slidesPerGroup]="3"
     [config]="config"
     [loop]="true"
     [loopFillGroupWithBlank]="true"
-    [pagination]="{
-      clickable: true
-    }"
+ 
      class="mySwiper mt-5"
   >
 
 
     <ng-template swiperSlide>
+      <mat-card>
+        <div>
+            <img  mat-card-image src="https://elrincondelgeek.files.wordpress.com/2011/04/google-chrome-logo-400x400.jpg">
+        </div>
+        <mat-card-content>
+
+            <div class="nombre-prod">
+                <p class="nombre">Producto</p>
+            </div>
+            <h5  class="text-center precioAnterior"><span class="mr-1" style="text-decoration-line: line-through;">L. 100</span></h5>
+            <h5  class="text-center precio"><span>L. 100</span></h5>
+        </mat-card-content>
+    </mat-card>
+  
+    </ng-template>
+
+    <ng-template swiperSlide>
+      <mat-card>
+        <div>
+            <img  mat-card-image src="https://i.pinimg.com/originals/07/00/93/070093a9b4079db273b5a3eb0f06d544.png">
+        </div>
+        <mat-card-content>
+
+            <div class="nombre-prod">
+                <p class="nombre">Producto</p>
+            </div>
+            <h5  class="text-center precioAnterior"><span class="mr-1" style="text-decoration-line: line-through;">L. 100</span></h5>
+            <h5  class="text-center precio"><span>L. 100</span></h5>
+        </mat-card-content>
+    </mat-card>
+  
+    </ng-template>
+
+    <ng-template swiperSlide>
+      <mat-card>
+        <div>
+            <img  mat-card-image src="https://pbs.twimg.com/profile_images/446356636710363136/OYIaJ1KK_400x400.png">
+        </div>
+        <mat-card-content>
+
+            <div class="nombre-prod">
+                <p class="nombre">Producto</p>
+            </div>
+            <h5  class="text-center precioAnterior"><span class="mr-1" style="text-decoration-line: line-through;">L. 100</span></h5>
+            <h5  class="text-center precio"><span>L. 100</span></h5>
+        </mat-card-content>
+    </mat-card>
+  
+    </ng-template>
+
+    <ng-template swiperSlide>
+      <mat-card>
+        <div>
+            <img  mat-card-image src="https://logodownload.org/wp-content/uploads/2014/04/bmw-logo-5.png">
+        </div>
+        <mat-card-content>
+
+            <div class="nombre-prod">
+                <p class="nombre">Producto</p>
+            </div>
+            <h5  class="text-center precioAnterior"><span class="mr-1" style="text-decoration-line: line-through;">L. 100</span></h5>
+            <h5  class="text-center precio"><span>L. 100</span></h5>
+        </mat-card-content>
+    </mat-card>
+  
+    </ng-template>
+
+
+
  
-        <mat-card class="example-card m-5">
-            <mat-card-header>
-              <div mat-card-avatar class="example-header-image"></div>
-              <mat-card-title>Shiba Inu</mat-card-title>
-              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-            <mat-card-content>
-              <p>
-                The Shiba Inu is the smallest
-              </p>
-            </mat-card-content>
-            <mat-card-actions>
-              <button mat-button>LIKE</button>
-              <button mat-button>SHARE</button>
-            </mat-card-actions>
-          </mat-card>
-    </ng-template>
-    <ng-template swiperSlide>
-        <mat-card class="example-card m-5 ">
-            <mat-card-header>
-              <div mat-card-avatar class="example-header-image"></div>
-              <mat-card-title>Shiba Inu</mat-card-title>
-              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-            <mat-card-content>
-              <p>
-                The Shiba Inu is the smallest
-              </p>
-            </mat-card-content>
-            <mat-card-actions>
-              <button mat-button>LIKE</button>
-              <button mat-button>SHARE</button>
-            </mat-card-actions>
-          </mat-card>
-    </ng-template>
-    <ng-template swiperSlide>
-        <mat-card class="example-card m-5">
-            <mat-card-header>
-              <div mat-card-avatar class="example-header-image"></div>
-              <mat-card-title>Shiba Inu</mat-card-title>
-              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-            <mat-card-content>
-              <p>
-                The Shiba Inu is the smallest
-              </p>
-            </mat-card-content>
-            <mat-card-actions>
-              <button mat-button>LIKE</button>
-              <button mat-button>SHARE</button>
-            </mat-card-actions>
-          </mat-card>
-    </ng-template>
 
 
 
