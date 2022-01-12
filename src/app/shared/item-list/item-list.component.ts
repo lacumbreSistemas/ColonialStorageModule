@@ -21,7 +21,7 @@ export class ItemListComponent implements OnInit {
         spaceBetween: 15,
       },
       375: {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 15,
       },
       676: {
