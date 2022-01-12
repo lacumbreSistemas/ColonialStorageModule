@@ -39,27 +39,58 @@
         color: white;
         font-size:medium;
     }
-
     
+    .fa-user{
+        margin-left: 30px;
+    }
+    
+    .fa-bars{
+        margin-left: 10px;  
+    }
     .mat-button{
         margin-left: -55px;
         color: rgb(17, 17, 17);
         color: white;
         font-size:medium;
     }
+
+    .fa-shopping-cart{
+        margin-right: -200px;   
+        margin-top: -200px;
+  }
     
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1199px) {
     .logo {
-        width: 150px;
+        width: 110px;
         height: auto;
-        margin-left: -10px;
+        margin-left: 3px;
     }
-
     .fas, p{
         color: white;
-        font-size:x-large;
+        font-size:medium;
+
+    }
+    
+    .fa-user{
+        margin-left: 10px;
+    }
+    
+    .fa-bars{
+        margin-left: -100px;  
+        
+    }
+
+    .fa-shopping-cart{
+          margin-right: -1000px;   
+          margin-top: -200px;
+    }
+    .mat-button{
+        margin-left: -55px;
+        color: rgb(17, 17, 17);
+        color: white;
+        font-size:medium;
     }
     
 }
