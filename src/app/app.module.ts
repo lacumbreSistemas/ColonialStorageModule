@@ -9,6 +9,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { BannerPrincipalComponent } from './shared/banner-principal/banner-principal.component';
 import { ItemListComponent } from './shared/item-list/item-list.component';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
@@ -35,8 +37,9 @@ import { TopBarComponent } from './shared/top-bar/top-bar.component';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatSidenavModule
-
+    MatSidenavModule,
+    MatToolbarModule,
+    MatFormFieldModule
   ],
   providers: [
 

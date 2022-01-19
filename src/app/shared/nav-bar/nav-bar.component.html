@@ -1,5 +1,46 @@
+
+<!-- <nav class="sticky-top d-flex d-sm-flex d-md-flex d-lg-none">
+    <mat-toolbar class="pt-1 pb-1 mb-2">
+        <mat-toolbar-row>
+            <button matTooltip="Comenzar a Comprar" type=" button "  mat-icon-button>
+                <mat-icon style="font-size: 25px; color: var(--blue-primary);" fontSet="fas" fontIcon="fa-bars"></mat-icon>
+              </button>
+            <span class="example-fill-remaining-space"></span>
+            <a matTooltip="Ir a Pagina Principal" >
+                <img class="logo" src="https://firebasestorage.googleapis.com/v0/b/sconliestore.appspot.com/o/LogoAzul.gif?alt=media&token=19388759-093c-4c2f-966f-5b6dcb58c68d"> </a>
+            <span class="example-fill-remaining-space"></span>
+            <app-shopingcard [routerLink]="['ShopList']"  class="mt-2"></app-shopingcard>
+            <span class="example-fill-remaining-space"></span>
+            <button style="font-size: 15px;color: var(--blue-primary);"  mat-icon-button>
+                <mat-icon  fontSet="fas" fontIcon="fa-search"></mat-icon>
+            </button>
+        </mat-toolbar-row>
+        <mat-toolbar-row style="color: var(--blue-primary);" class="mt-3 animated fadeIn" id="collapseExample" >
+            <div class="container-fluid">
+                <div class="d-flex justify-content-center">
+                    <form>
+                        <mat-form-field class="example-full-width">
+                            <input  type="text" placeholder="Buscar Productos" ( aria-label="Number" matInput  name="search">
+                            <button  mat-icon-button matSuffix>
+                                <mat-icon  style="color: var(--blue-primary);" fontSet="fas" fontIcon="fa-search"></mat-icon>
+                            </button>
+                            <mat-autocomplete #auto="matAutocomplete">
+                                <mat-option *ngFor="let item of items" style="font-size: 12px;" (click)="itemSearched(item);isCollapsed = !isCollapsed;">
+                                    <img (error)="onImgError($event)" height="30px" width="30px" [src]="item.imagen" alt=""> {{item.nombre}}
+                                </mat-option>
+                            </mat-autocomplete>
+                        </mat-form-field>
+                    </form>
+                </div>
+            </div>
+        </mat-toolbar-row>
+    </mat-toolbar>
+</nav> -->
+
+
+
 <header class="section-header ">
-    <section class="header-main border-bottom">
+    <section class="header-main border-bottom d-none d-md-block">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-lg-2 col-sm-4 col-md-4 col-5"> <a href="#" class="brand-wrap" data-abc="true">
